@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app="self-Service">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>客户服务-中国电信国际有限公司</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo-title.ico" media="screen" />
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet"/>
+</head>
+<body ng-controller="myctrl">
+<div>
+  <!--头部-->
+  <header ng-include="'herder.html'" class="navbar-fixed-top"></header>
+  <!--/头部-->
+
+  <!--主体-->
+  <div class="body">
+    <!--侧边栏-->
+    <nav>
+      <h4><a href="#">Home</a></h4>
+      <h4>My Order</h4>
+      <ul class="list-unstyled">
+        <li>
+          <i></i>
+          <a href="#">In-use Order</a>
+        </li>
+        <li>
+          <i></i>
+          <a href="#">Processing Order</a>
+        </li>
+        <li>
+          <i></i>
+          <a href="#">History Order</a>
+        </li>
+      </ul>
+    </nav>
+    <!--/侧边栏-->
+    <!--详细信息-->
+    <aside ng-view>
+
+    </aside>
+    <!--/详细信息-->
+  </div>
+  <!--/主体-->
+
+  <!--底部-->
+  <footer class="navbar-fixed-bottom" ng-include="'footer.html'"></footer>
+  <!--/底部-->
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src ="js/angular.js" ></script>
+<script src ="js/angular-route.js" ></script>
+<script src="js/index.js"></script>
+</body>
+</html>
+
